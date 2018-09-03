@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         if(lm != null) {
             PermitGps.check(this, lm, 1000, 5);
         }
-        Log.d("msg", "test");
     }
 
     private void initData() {

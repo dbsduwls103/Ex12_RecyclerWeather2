@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        android:padding="16dp"
+        android:background="#0c1b3b"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_marginRight="16dp"
+                android:scaleType="fitCenter"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8월 22일 15시"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="#999"/>
+                <RelativeLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_temp"
+                        android:text="26도"
+                        android:textSize="32dp"
+                        android:textColor="#fff"
+                        android:layout_marginRight="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_temp_min"
+                        android:text="최저온도: 22도"
+                        android:layout_toRightOf="@+id/tv_temp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#3b608e"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_temp_max"
+                        android:text="최고온도: 28도"
+                        android:layout_toRightOf="@+id/tv_temp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_temp_min"
+                        android:textColor="#8e653b"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_marginTop="8dp"
+            android:text="바람방향: 36도 / 바람세기: 4.3ms"
+            android:textColor="#b4b4b4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_summary"
+            android:text="Clear Sky"
+            android:textColor="#ffedca"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
